@@ -1,39 +1,20 @@
-# Secrets and local environment settings
-.env
-.env.*
-!.env.example
+# Ignore everything by default
+*
 
-# Python bytecode and tooling caches
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+# Allow folders so Git can access their contents
+!*/
 
-# Jupyter temporary checkpoint files (notebooks themselves remain included)
-.ipynb_checkpoints/
+# Allow README files
+!README*
+!readme*
 
-# Virtual environments
-.venv/
-venv/
-env/
+# Allow EDA files
+!eda/
+!eda/**
 
-# Logs and temporary output
-*.log
-*.tmp
-*.temp
+# Allow original data
+!data/
+!data/**
 
-# OS and editor metadata
-.DS_Store
-Thumbs.db
-desktop.ini
-.vscode/
-.idea/
-
-
-.ipl_consolidated_eda_report.docx
-.project_report.md
-.ipl_eda_full_report.md
-.data/
+# Allow .gitignore itself
+!.gitignore
