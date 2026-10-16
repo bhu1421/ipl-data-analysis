@@ -7,9 +7,14 @@ dimensional modeling, and an interactive dashboard.
 
 ## Live Power BI Dashboard
 
-Explore the interactive IPL Performance Analytics dashboard:
+Explore the published interactive report:
 
-[**View the Live Power BI Report**](https://app.powerbi.com/groups/0a334a76-91ec-49cf-93ab-6def0cdbad56/reports/92e63f5f-ef3c-472c-8740-bd9226e49ae6/b76132fab069ba68bd9b?experience=power-bi)
+[**Open the IPL Performance Analytics
+Dashboard**](https://app.powerbi.com/groups/0a334a76-91ec-49cf-93ab-6def0cdbad56/reports/92e63f5f-ef3c-472c-8740-bd9226e49ae6/b76132fab069ba68bd9b?experience=power-bi)
+
+> Access may depend on Power BI sharing permissions and sign-in
+> requirements.
+
 
 ## Project at a Glance
 
@@ -136,34 +141,81 @@ For fair year-over-year comparisons, the project's standard comparison
 period is **2008--2025**, unless a visual explicitly identifies that it
 includes partial 2026 data.
 
-## Power BI Dashboard
+## Questions the Dashboard Answers
 
-### 1. Executive Overview
+The four implemented pages support the following analytical questions:
 
-High-level IPL activity and key performance indicators.
+### Executive Overview
 
-### 2. Team & Season Performance
+-   What is the overall scale of the IPL data covered by the report?
+-   What are the headline scoring and dismissal indicators for the
+    selected filters?
+-   How can a user navigate from high-level KPIs to team, batting, and
+    bowling analysis?
 
-Historical team comparisons, win performance, season trends, and
-consistency analysis.
+### Team & Season Performance
 
-### 3. Batting Analysis
+-   Which teams have the strongest historical win totals and win
+    percentages?
+-   How does team performance vary across seasons?
+-   How have IPL scoring patterns changed over time?
+-   Which teams appear more consistent across the selected period?
 
-Run scoring, boundaries, batting trends, and player-level batting
-performance.
+### Batting Analysis
 
-### 4. Bowling Analysis
+-   Which batters have scored the most runs?
+-   How do fours, sixes, and boundary scoring contribute to batting
+    output?
+-   How have run-scoring and boundary trends changed by season?
+-   Which innings and player performances stand out under the selected
+    filters?
 
-Wicket-taking and bowling efficiency, including economy rate, bowling
-average, and bowling strike rate.
+### Bowling Analysis
 
-**Visual design:** dark navy stadium-inspired background, cyan/blue
-accents, white typography, orange comparison elements, KPI cards, and
-left-side page navigation.
+-   Which bowlers have taken the most bowler-credited wickets?
+-   How do bowlers compare on economy rate, bowling average, and bowling
+    strike rate?
+-   Which bowlers combine wicket-taking with restrictive run rates?
+-   How do bowling performance measures vary across the selected seasons
+    and players?
 
-> Add screenshots or a GIF of the actual Power BI report before
-> publishing. Do not present screenshots of planned pages as completed
-> features.
+These questions are answered within the filters and measures implemented
+in the current report. Toss-specific and venue-specific questions are
+not covered by dedicated dashboard pages yet.
+
+## Key Insights from the Analysis
+
+The following are selected findings from the documented EDA. They are
+descriptive observations, not proof of causation, and totals may change
+with report filters or metric definitions.
+
+-   **Six-hitting increased across the period:** season sixes rose from
+    **623 in 2008 to 1,302 in 2025**, an increase of approximately
+    **109%**.
+-   **Boundaries contributed a large share of scoring in 2025:** fours
+    and sixes accounted for approximately **66.6% of batter runs** in
+    the documented 2025 analysis.
+-   **Mumbai Indians lead the documented all-season win count:** **153
+    wins from 285 matches**. Chennai Super Kings recorded **145 wins
+    from 260 matches**. Win totals and percentages should be interpreted
+    alongside matches played.
+-   **Caught dismissals were the most common recorded dismissal type:**
+    approximately **63.1% of all recorded dismissals** in the documented
+    all-season EDA were catches.
+-   **Leading wicket-takers in the documented all-season analysis:**
+    Yuzvendra Chahal recorded **228 bowler-credited wickets**, followed
+    by Bhuvneshwar Kumar with **215** and Sunil Narine with **201**.
+-   **Season totals need context:** seasons have different numbers of
+    matches, so raw totals alone can be misleading. Per-match or
+    per-innings comparisons are useful complements.
+-   **Data quality was explicitly checked:** the documented validation
+    found **zero arithmetic mismatches across 288,226 deliveries** for
+    `batter_runs + extras = total_runs`. This confirms the checked
+    arithmetic rule, not that every source field is error-free.
+
+The standard year-over-year comparison period is **2008--2025** because
+2026 is partial in the available dataset. Use the report's filters and
+metric definitions when reproducing or interpreting any result.
 
 ## Selected Findings
 
@@ -183,6 +235,7 @@ with filters and metric definitions.
 These findings describe patterns; they do not establish that any single
 factor causes a team to win. Raw seasonal totals should be interpreted
 in the context of the number of matches played.
+
 
 ## Repository Structure
 
