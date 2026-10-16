@@ -254,7 +254,7 @@ ipl-data-analysis/
 │       ├── 03_players_eda.ipynb
 │       ├── 04_team_aliases_eda.ipynb
 │       ├── 05_teams_eda.ipynb
-│       └── 06_sql_database_setup.ipynb
+│       └── 06_final_tables_.ipynb
 ├── ball_by_ball_data.csv
 ├── ipl_matches_data.csv
 ├── players-data-updated.csv
