@@ -52,7 +52,6 @@ published totals.
 
 -   **Python / Pandas:** data inspection, cleaning, transformation, EDA
 -   **Jupyter Notebook:** documented analysis workflow
--   **SQL / MySQL:** relational storage and dimensional modeling
 -   **Power BI:** interactive reporting and visualization
 -   **DAX:** analytical measures and context-aware calculations
 -   **Git / GitHub:** version control and documentation
